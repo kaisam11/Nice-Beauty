@@ -343,6 +343,11 @@ p {
     transition: all 1s ease-in-out;
 }
 
+.img img {
+    height: 50vh;
+    object-fit: cover;
+}
+
 .box:hover .img{
     opacity: 1
 }
