@@ -612,8 +612,8 @@ p {
     .item1,
     .item2,
     .item3 {
-        height: 40vh;
-        width: 85vw;
+        height: 50vh;
+        width: 80vw;
         object-fit: cover;
         margin: 0;
         margin-bottom: 2rem;
