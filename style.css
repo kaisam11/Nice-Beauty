@@ -2,6 +2,9 @@
     --ff1 : 'Poppins', sans-serif;
     --ff2 : 'Bodoni Moda', serif;
     --ff3 : 'Antonio', sans-serif;
+
+    --fc1 : #000;
+    --fc2 : #b68973;
 }
 
 * {
@@ -17,7 +20,7 @@ html {
 
 body {
     color: #fff;
-    background-color: #000;
+    background-color: var(--fc1);
     font-family: var(--ff1);
 }
 
@@ -75,8 +78,24 @@ p {
     font-weight: 400;
     display: inline-block;
     letter-spacing: .1rem;
-    transition: all .2s ease-in;
+    position: relative;
 }
+
+.header ul li::after {
+    content: " ";
+    position: absolute;
+    bottom: -.5rem;
+    left: 0;
+    height: 2px;
+    background-color: #fff;
+    width: 0;
+    transition: all .3s ease-in;
+}
+
+.header ul li:hover::after{
+    width: 100%;
+}
+
 
 .left-menu li{
     margin-right: 4rem;
@@ -92,8 +111,8 @@ p {
     text-decoration: none;
 }
 
-.header ul li:hover {
-    transform: scale(1.1);
+.down {
+    background-color: #000;
 }
 
 
@@ -121,7 +140,7 @@ p {
 .btn {
     position: relative;
     display: inline-block;
-    color: #000;
+    color: var(--fc1);
     background-color: #fff;
     text-transform: uppercase;
     text-decoration: none;
@@ -142,7 +161,7 @@ p {
     left: 0;
     width: 100.1%;
     height: 0;
-    background-color: #000;
+    background-color: var(--fc1);
     opacity: .9;
     z-index: -1;
     transition: all .5s ease-in-out;
@@ -193,6 +212,7 @@ p {
 
 .intro .text{
     width: 95%;
+    margin-bottom: 5rem;
 }
 
 .intro .text-left {
@@ -209,20 +229,11 @@ p {
     background: linear-gradient(to left, transparent, #fff, transparent)
 }
 
-.intro:after {
-    content: " ";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 1px;
-    background: linear-gradient(to left, transparent, #fff, transparent)
-}
-
 
 /* Features */
 .features {
     padding: 10rem 0;
+    background-color: var(--fc2);
 }
 
 .features h2{
@@ -280,16 +291,22 @@ p {
 
 
 /* Showcase */
+.showcase {
+    color: #000;
+    background-color: #fff;
+}
+
 .showcase h2{
     text-transform: uppercase;
     max-width: 60%;
-    margin-bottom: 5rem;
+    margin: 5rem 0;
 }
 
 .items {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-bottom: 5rem;
 }
 
 .item1,
