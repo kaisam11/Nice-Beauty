@@ -606,14 +606,13 @@ p {
 
     .items {
         display: flex;
-        flex-direction: column;
     }
 
     .item1,
     .item2,
     .item3 {
-        height: 50vh;
-        width: 80vw;
+        height: 65rem;
+        width: 30vw;
         object-fit: cover;
         margin: 0;
         margin-bottom: 2rem;
