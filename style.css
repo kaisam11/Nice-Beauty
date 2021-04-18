@@ -573,7 +573,7 @@ p {
 
     .nav-full ul li a {
         display: block;
-        font-size: 4rem;
+        font-size: 3rem;
         text-align: center;
         font-weight: 300;
     }
@@ -677,7 +677,11 @@ p {
 
 @media screen and (max-width:600px) {
     html {
-        font-size: 5px;
+        font-size: 5.5px;
+    }
+
+    .container {
+        padding: 5rem;
     }
 
     .footer {
