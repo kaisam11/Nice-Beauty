@@ -612,8 +612,7 @@ p {
     .item1,
     .item2,
     .item3 {
-        height: 25vh;
-        min-height: 40rem;
+        height: 70vh;
         width: 85vw;
         object-fit: cover;
         margin: 0;
@@ -627,7 +626,7 @@ p {
         margin-right: auto;
     }
 
-    .box img {
+    .box .img img {
         height: 35vh;
         width: 100%;
         object-fit: cover;
@@ -635,6 +634,8 @@ p {
 
     .collection-boxes .img{
         opacity: 1;
+        object-fit: cover;
+        
     }
     
 }
