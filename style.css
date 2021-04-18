@@ -124,7 +124,9 @@ p {
     background-position: top;
     display: flex;
     align-items: flex-end;
+    position: relative;
 }
+
 
 .banner .text {
     text-align: center;
@@ -231,9 +233,12 @@ p {
 
 
 /* Features */
-.features {
-    padding: 10rem 0;
+.feature {
     background-color: var(--fc2);
+}
+
+.features {
+    padding-top: 10rem;
 }
 
 .features h2{
@@ -272,6 +277,10 @@ p {
     width: 1px;
     height: 100%;
     background: linear-gradient(to top, transparent, #fff)
+}
+
+.features:nth-child(even) .features-inner {
+    padding-bottom: 10rem;
 }
 
 .features:nth-child(even) .text{
@@ -404,6 +413,11 @@ p {
     text-decoration: none;
     color: #fff;
     font-size: 1.4rem;
+    transition: all .3s ease-in-out;
+}
+
+.footer ul li a:hover {
+    color: var(--fc2);
 }
 
 .footer:before {
@@ -533,6 +547,10 @@ p {
     .open .bot {
         transform: rotate(-45deg);
         /* bottom: 12.5px; */
+    }
+
+    .header ul li:hover::after{
+        width: inherit;
     }
 
     .nav-full ul{
@@ -709,6 +727,10 @@ p {
     .col-3 {
         grid-row: 2 / 3;
         grid-column: 1 / 2;
+    }
+
+    .copyright p{
+        font-size: 2rem;
     }
     
 }
