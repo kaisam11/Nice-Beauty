@@ -47,6 +47,7 @@ h3 {
 
 p {
     font-size: 1.5rem;
+    line-height: 3rem;
 }
 
 .preloader {
@@ -253,9 +254,6 @@ main {
     line-height: 4rem;
 }
 
-.intro p {
-    line-height: 3.2rem;
-}
 
 .intro-inner {
     display: grid;
@@ -297,9 +295,6 @@ main {
     text-transform: uppercase;
 }
 
-.features p {
-    line-height: 3rem;
-}
 
 .features-inner {
     display: flex;
@@ -359,11 +354,11 @@ main {
 
 .showcase-inner {
     margin: 10rem 0;
+    text-align: center;
 }
 
 .showcase h2{
     text-transform: uppercase;
-    max-width: 60%;
     margin: 5rem 0;
 }
 
@@ -397,7 +392,7 @@ main {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-top: 9rem;
+    margin-top: 7rem;
 }
 
 .box {
@@ -414,7 +409,7 @@ main {
 
 .box h6 {
     font-family: var(--ff1);
-    font-size: 1.8rem;
+    font-size: 2rem;
     font-weight: 400;
 }
 
@@ -534,9 +529,13 @@ main {
         display: inherit;
     }
 
+    body {
+        text-align: center;
+    }
 
     p {
         font-size: 2rem;
+        line-height: 3.5rem;
     }
 
     .container {
@@ -636,10 +635,11 @@ main {
 
     .intro-inner {
         grid-template-columns: 1fr;
+        gap: 0;
+        margin-top: 10rem;
     }
 
     .intro-inner h3,p {
-        margin: 2rem 0;
         text-align: center;
     }
 
@@ -674,6 +674,10 @@ main {
 
     .features .text-inner:before {
         display: none;
+    }
+
+    .features .text {
+        text-align: left;
     }
 
     .features:nth-child(even) .img {
@@ -720,6 +724,10 @@ main {
         margin-right: auto;
     }
 
+    .box h6 {
+        font-size: 3.5rem;
+    }
+
     .collection-boxes .img{
         opacity: 1;
         object-fit: cover; 
@@ -732,8 +740,24 @@ main {
         font-size: 5.5px;
     }
 
+    h2 {
+        font-size: 4rem;
+    }
+
+    h3 {
+        font-size: 3.5rem;
+    }
+
+    p {
+        font-size: 2.5rem;
+    }
+
     .container {
         padding: 5rem;
+    }
+
+    .btn {
+        font-size: 3rem;
     }
 
     .footer {
@@ -744,14 +768,9 @@ main {
         margin-bottom: 10rem;
     }
 
-    .box h6 {
-        font-size: 3rem;
-    }
-
     .footer-inner {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        /* grid-template-rows: repeat(2, 1fr); */
         justify-items: center;
         gap: 2rem;
     }
