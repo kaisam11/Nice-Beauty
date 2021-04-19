@@ -157,6 +157,7 @@ main {
 /* Banner */
 .banner {
     height: 100vh;
+    min-height: 100rem;
     background: url(./images/banner.jpg) no-repeat;
     background-size: cover;
     background-position: top;
@@ -383,6 +384,7 @@ main {
 .item2,
 .item3 {
     height: 85vh;
+    min-height: 50rem;
     width: 25vw;
     object-fit: cover;
     padding: 2rem;
@@ -528,19 +530,8 @@ main {
 
 }
 
-@media screen and (max-width: 1100px) {
-    .features-inner img {
-        height: 50vh;
-    }
 
-    .item1,
-    .item2,
-    .item3 {
-        transform: rotate(0);
-    }
-}
-
-@media screen and (max-width:1000px) {
+@media screen and (max-width:1100px) {
 
     .desktop-hidden {
         display: inherit;
@@ -678,6 +669,7 @@ main {
 
     .img img {
         height: 45vh;
+        min-height: 50rem;
         width: 85vw;
         object-fit: cover;
         object-position: top;
@@ -734,11 +726,10 @@ main {
     .item1,
     .item2,
     .item3 {
-        height: 65rem;
-        width: 30vw;
+        height: 70rem;
+        width: 35vw;
         object-fit: cover;
         margin: 0;
-        transform: rotate(0);
         margin-bottom: 2rem;
     }
 
@@ -791,6 +782,13 @@ main {
 
     .banner .text {
         margin-bottom: 10rem;
+    }
+
+    .item1 ,
+    .item2 ,
+    .item3 {
+        min-width: 25rem;
+        height: 80rem;
     }
 
     .footer-inner {
