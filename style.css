@@ -4,7 +4,7 @@
     --ff3 : 'Antonio', sans-serif;
 
     --fc1 : #0b090a;
-    --fc2 : #b68973;
+    --fc2 : #370617;
 }
 
 
@@ -471,7 +471,7 @@ main {
 }
 
 .footer ul li a:hover {
-    color: var(--fc2);
+    opacity: .7;
 }
 
 .footer:before {
