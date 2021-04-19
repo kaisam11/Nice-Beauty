@@ -157,7 +157,6 @@ main {
 /* Banner */
 .banner {
     height: 100vh;
-    min-height: 85rem;
     background: url(./images/banner.jpg) no-repeat;
     background-size: cover;
     background-position: top;
@@ -637,6 +636,10 @@ main {
         font-weight: 300;
     }
 
+    .banner {
+        min-height: 70rem;
+    }
+
     .banner p {
         margin-top: 5rem;
     }
@@ -750,6 +753,7 @@ main {
     }
     
 }
+
 
 @media screen and (max-width:600px) {
     html {
