@@ -64,6 +64,7 @@ p {
 
 .preloader img {
     width: 50vw;
+    mix-blend-mode: luminosity;
 }
 
 .hide-preloader {
