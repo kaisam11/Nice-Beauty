@@ -63,6 +63,7 @@ p {
 }
 
 .preloader img {
+    max-width: 25rem;
     width: 50vw;
     mix-blend-mode: luminosity;
 }
@@ -105,6 +106,7 @@ main {
     align-items: center;
     z-index: 1000;
 }
+
 
 .header ul li{
     list-style: none;
@@ -160,12 +162,26 @@ main {
 
 .banner .text {
     text-align: center;
-    opacity: 0;
-    transition: opacity 1s ease-in-out 1s;
+    margin-bottom: 5rem;
+}
+
+@keyframes fade {
+    0%{
+        opacity: 0;
+        margin-bottom: -10rem;
+    }
+
+    50%{
+        opacity: .5;
+    }
+
+    100%{
+        opacity: 1;
+    }
 }
 
 .swipe-up .text {
-    opacity: 1;
+    animation: fade 1.2s ease-out;
 }
 
 
@@ -502,10 +518,6 @@ main {
 
     html {
         font-size: 12px;
-    }
-
-    .container {
-        padding: 5rem 20rem;
     }
 
 }

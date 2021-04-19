@@ -5,10 +5,11 @@ window.addEventListener('load', () => {
 })
 
 const main = document.querySelector('.app')
+
 const banner = document.querySelector('.banner')
 
 window.onload = () => {
-    main.classList.add('view-content');
+    main.classList.add('view-content')
     banner.classList.add('swipe-up')
 }
 
