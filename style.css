@@ -3,7 +3,7 @@
     --ff2 : 'Bodoni Moda', serif;
     --ff3 : 'Antonio', sans-serif;
 
-    --fc1 : #000;
+    --fc1 : #0b090a;
     --fc2 : #b68973;
 }
 
@@ -37,7 +37,7 @@ h1 {
 }
 
 h2 {
-    font-size: 3.6rem;
+    font-size: 5rem;
     line-height: 1.2
 }
 
@@ -46,7 +46,7 @@ h3 {
 }
 
 p {
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     line-height: 3rem;
 }
 
@@ -98,16 +98,21 @@ main {
 
 /* Hero */
 .header {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     display: flex;
+    background: transparent;
     justify-content: space-between;
     align-items: center;
     z-index: 1000;
+    transition: all 1s;
 }
 
+.header.fixed-header {
+    background: #000;
+}
 
 .header ul li{
     list-style: none;
@@ -360,7 +365,7 @@ main {
 
 .showcase h2{
     text-transform: uppercase;
-    margin: 5rem 0;
+    margin-bottom: 10rem;
 }
 
 .items {
@@ -377,6 +382,7 @@ main {
     width: 25vw;
     object-fit: cover;
     padding: 2rem;
+    transform: rotate(22deg);
     }
 
 
@@ -522,6 +528,12 @@ main {
     .features-inner img {
         height: 50vh;
     }
+
+    .item1,
+    .item2,
+    .item3 {
+        transform: rotate(0);
+    }
 }
 
 @media screen and (max-width:1000px) {
@@ -630,6 +642,10 @@ main {
         font-weight: 300;
     }
 
+    .banner p {
+        margin-top: 5rem;
+    }
+
     .brand-logo img {
         height: 4rem;
     }
@@ -644,13 +660,16 @@ main {
         text-align: center;
     }
 
-
     .feature {
         margin-top: 7rem;
     }
 
     .features-inner {
         flex-direction: column;
+    }
+
+    .features h2 {
+        margin-bottom: 3rem;
     }
 
     .img img {
@@ -715,6 +734,7 @@ main {
         width: 30vw;
         object-fit: cover;
         margin: 0;
+        transform: rotate(0);
         margin-bottom: 2rem;
     }
 
