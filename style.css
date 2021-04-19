@@ -157,7 +157,7 @@ main {
 /* Banner */
 .banner {
     height: 100vh;
-    min-height: 100rem;
+    min-height: 85rem;
     background: url(./images/banner.jpg) no-repeat;
     background-size: cover;
     background-position: top;
