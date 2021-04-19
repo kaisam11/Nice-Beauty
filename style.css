@@ -171,6 +171,10 @@ main {
     margin-bottom: 5rem;
 }
 
+.banner p {
+    opacity: .8;
+}
+
 @keyframes fade {
     0%{
         opacity: 0;
