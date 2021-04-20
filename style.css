@@ -46,7 +46,7 @@ h3 {
 }
 
 p {
-    font-size: 1.7rem;
+    font-size: 1.5rem;
     line-height: 3rem;
 }
 
@@ -211,7 +211,7 @@ main {
     text-align: center;
     font-size: 1.7rem;
     font-weight: 400;
-    padding: 1.5rem 6rem;
+    padding: 1.5rem 5rem;
     z-index: 10;
     margin-top: 5rem;
     backface-visibility: hidden;
