@@ -415,7 +415,7 @@ main {
     align-items: center;
     justify-content: center;
     width: 23%;
-    min-height: 27rem;
+    height: 30vw;
     border: 1px solid var(--fc3);
     margin-bottom: 4rem;
     overflow: hidden;
