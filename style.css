@@ -162,7 +162,7 @@ main {
 /* ///////////////// Banner ///////////////// */
 .banner {
     height: 100vh;
-    background: url(./images/banner.jpg) no-repeat;
+    background: url(./images/banner.webp) no-repeat;
     background-size: cover;
     background-position: top;
     display: flex;
@@ -775,7 +775,7 @@ main {
 
     .img img {
         height: 45vh;
-        min-height: 50rem;
+        min-height: 55vw;
         width: 85vw;
         object-fit: cover;
         object-position: top;
@@ -841,13 +841,17 @@ main {
 
     .box {
         width: 85vw;
-        height: 25vh;
+        height: 40vw;
         margin-left: auto;
         margin-right: auto;
     }
 
     .box h6 {
         font-size: 3.5rem;
+    }
+
+    .box .img img {
+        object-position: 0 -15rem;
     }
 
     .collection-boxes .img{
