@@ -5,6 +5,7 @@
 
     --fc1 : #0b090a;
     --fc2 : #370617;
+    --fc3 : #fffffc;
 }
 
 
@@ -20,7 +21,7 @@ html {
 }
 
 body {
-    color: #fff;
+    color: var(--fc3);
     background-color: var(--fc1);
     font-family: var(--ff1);
     
@@ -50,6 +51,8 @@ p {
     line-height: 3rem;
 }
 
+
+/* ///////////////// Pre Loader ///////////////// */
 .preloader {
     position: fixed;
     top: 0;
@@ -74,6 +77,8 @@ p {
     display: none;
 }
 
+
+/* ///////////////// Main Content ///////////////// */
 main {
     opacity: 0;
     transition: opacity 1s ease-in-out;
@@ -88,6 +93,8 @@ main {
     margin: 0 auto;
 }
 
+
+/* ///////////////// Hero ///////////////// */
 .logo h1 {
     font-size: 2rem;
     font-family: var(--ff3);
@@ -95,8 +102,6 @@ main {
     letter-spacing: .5rem;
 }
 
-
-/* Hero */
 .header {
     position: fixed;
     top: 0;
@@ -128,8 +133,8 @@ main {
     position: absolute;
     bottom: -.5rem;
     left: 0;
-    height: 2px;
-    background-color: #fff;
+    height: .2rem;
+    background-color: var(--fc3);
     width: 0;
     transition: all .3s ease-in;
 }
@@ -148,13 +153,13 @@ main {
 }
 
 .header ul li a{
-    color: #fff;
+    color: var(--fc3);
     text-transform: uppercase;
     text-decoration: none;
 }
 
 
-/* Banner */
+/* ///////////////// Banner ///////////////// */
 .banner {
     height: 100vh;
     background: url(./images/banner.jpg) no-repeat;
@@ -200,12 +205,11 @@ main {
     line-height: 8rem;
 }
 
-
 .btn {
     position: relative;
     display: inline-block;
     color: var(--fc1);
-    background-color: #fff;
+    background-color: var(--fc3);
     text-transform: uppercase;
     text-decoration: none;
     text-align: center;
@@ -232,7 +236,7 @@ main {
 }
 
 .btn:hover {
-    color: #fff;
+    color: var(--fc3);
 }
 
 .btn:hover:before {
@@ -241,7 +245,7 @@ main {
 }
 
 
-/* Brand logo  */
+/* ///////////////// Brand Logo ///////////////// */
 .brand-logo {
     padding: 3rem 0;
 }
@@ -253,7 +257,7 @@ main {
 }
 
 
-/* Intro */
+/* ///////////////// Intro ///////////////// */
 .intro {
     position: relative;
 }
@@ -262,7 +266,6 @@ main {
     text-transform: uppercase;
     line-height: 4rem;
 }
-
 
 .intro-inner {
     display: grid;
@@ -288,11 +291,11 @@ main {
     left: 0;
     width: 100%;
     height: 1px;
-    background: linear-gradient(to left, transparent, #fff, transparent)
+    background: linear-gradient(to left, transparent, var(--fc3), transparent)
 }
 
 
-/* Features */
+/* ///////////////// Features ///////////////// */
 .feature {
     background-color: var(--fc2);
 }
@@ -304,7 +307,6 @@ main {
 .features h2{
     text-transform: uppercase;
 }
-
 
 .features-inner {
     display: flex;
@@ -333,7 +335,7 @@ main {
     left: -3rem;
     width: 1px;
     height: 100%;
-    background: linear-gradient(to top, transparent, #fff)
+    background: linear-gradient(to top, transparent, var(--fc3))
 }
 
 .features:nth-child(even) .features-inner {
@@ -356,10 +358,10 @@ main {
 }
 
 
-/* Showcase */
+/* ///////////////// Showcase ///////////////// */
 .showcase {
     color: #000;
-    background-color: #fff;
+    background-color: var(--fc3);
 }
 
 .showcase-inner {
@@ -391,7 +393,7 @@ main {
     }
 
 
-/* Collection */
+/* ///////////////// Collection ///////////////// */
 .collection {
     padding: 10rem 0;
 }
@@ -414,7 +416,7 @@ main {
     justify-content: center;
     width: 23%;
     min-height: 27rem;
-    border: 1px solid #fff;
+    border: 1px solid var(--fc3);
     margin-bottom: 4rem;
     overflow: hidden;
 }
@@ -444,7 +446,8 @@ main {
     opacity: 1
 }
 
-/* Footer */
+
+/* ///////////////// Footer ///////////////// */
 .footer {
     position: relative;
     padding: 5rem 0;
@@ -470,7 +473,7 @@ main {
 
 .footer ul li a {
     text-decoration: none;
-    color: #fff;
+    color: var(--fc3);
     font-size: 1.4rem;
     transition: all .3s ease-in-out;
 }
@@ -486,7 +489,7 @@ main {
     left: 0;
     width: 100%;
     height: 1px;
-    background: linear-gradient(to left, transparent, #fff, transparent);
+    background: linear-gradient(to left, transparent, var(--fc3), transparent);
 }
 
 .footer:after {
@@ -496,9 +499,11 @@ main {
     left: 0;
     width: 100%;
     height: 1px;
-    background: linear-gradient(to left, transparent, #fff, transparent);
+    background: linear-gradient(to left, transparent, var(--fc3), transparent);
 }
 
+
+/* ///////////////// Coptright ///////////////// */
 .copyright {
     padding: 2.5rem 0;
     text-align: center;
@@ -510,7 +515,7 @@ main {
 
 .copyright a {
     text-decoration: none;
-    color: #fff;
+    color: var(--fc3);
 }
 
 .desktop-hidden {
@@ -518,15 +523,110 @@ main {
 }
 
 
-
-
-
-@media screen and (min-width: 1500px) {
+/* ///////////////// Media Queries ///////////////// */
+@media screen and (min-width:1400px) {
 
     html {
         font-size: 12px;
     }
+}
 
+
+@media screen and (min-width: 1900px) {
+
+    h1 {
+        font-size: 9rem;
+    }
+
+    p {
+        font-size: 1.8rem;
+    }
+
+    .container {
+        padding: 3rem 15rem;
+    }
+
+    .banner .text {
+        margin-bottom: 7rem;
+    }
+
+    .banner h1{
+        margin-bottom: 3.5rem;
+    }
+}
+
+
+@media screen and (min-width: 2500px){
+
+    html {
+        font-size: 16px;
+    }
+
+    h1 {
+        font-size: 10rem;
+    }
+
+    h2 {
+        font-size: 6rem;
+    }
+
+    h3 {
+        font-size: 3.5rem;
+    }
+
+    p {
+        font-size: 2rem;
+        line-height: 3.5rem;
+    }
+
+    .container { 
+        padding: 5rem 15rem;
+    }
+
+    .header ul li {
+        font-size: 1.2rem;
+    }
+
+    .banner h1 {
+        margin-bottom: 4.5rem;
+    }
+
+    .intro h3 {
+        line-height: 4.5rem;
+    }
+
+    .brand-logo-inner img {
+        width: 10rem;
+    }
+}
+
+
+@media screen and (min-width: 3000px) {
+
+    html {
+        font-size: 19px;
+    }
+
+    .header ul li {
+        font-size: 1.3rem;
+    }
+}
+
+
+@media screen and (min-width: 3600px) {
+
+    html {
+        font-size: 25px;
+    }
+
+}
+
+
+@media screen and (min-width:5000px) {
+
+    html {
+        font-size: 30px;
+    }
 }
 
 
@@ -539,7 +639,7 @@ main {
     body {
         text-align: center;
     }
-
+    
     p {
         font-size: 2rem;
         line-height: 3.5rem;
@@ -564,7 +664,7 @@ main {
         margin-bottom: 5px;
         width: 26px;
         height: 2px;
-        background-color: #fff;
+        background-color: var(--fc3);
         position: relative;
         transition: all .5s ease-in-out;
     }
@@ -575,7 +675,7 @@ main {
         margin-bottom: 5px;
         width: 26px;
         height: 2px;
-        background-color: #fff;
+        background-color: var(--fc3);
         transition: all .5s ease-in-out;
     }
 
@@ -584,7 +684,7 @@ main {
         display: block;
         width: 26px;
         height: 2px;
-        background-color: #fff;
+        background-color: var(--fc3);
         transition: all .5s ease-in-out;
     }
 
@@ -619,7 +719,7 @@ main {
         right: -100%;
         height: 100vh;
         display: grid;
-        grid-template-rows: repeat(5, 15rem);
+        grid-template-rows: repeat(5, 15vh);
         align-content: center;
         justify-content: space-around;
         transition: all 1s ease-in-out;
@@ -631,7 +731,7 @@ main {
 
     .nav-full ul li a {
         display: block;
-        font-size: 3rem;
+        font-size: 3vh;
         text-align: center;
         font-weight: 300;
     }
@@ -833,6 +933,5 @@ main {
 
     .copyright p{
         font-size: 2rem;
-    }
-    
+    }   
 }
