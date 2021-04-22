@@ -513,7 +513,8 @@ main {
 
 .copyright a {
     text-decoration: none;
-    color: var(--fc3);
+    color: tan;
+    cursor: pointer;
 }
 
 .desktop-hidden {
